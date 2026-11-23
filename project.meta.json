@@ -1,0 +1,43 @@
+{
+  "id": "hw3-llm-wiki-slides",
+  "badge": "作業三 (HW 3) • 已發布",
+  "displayName": "用 LLM Wiki 做一份教學 HTML 簡報",
+  "subtitle": "從 VAE 到 Diffusion：零基礎搞懂 AI 圖像生成原理互動教學簡報",
+  "folderPath": "用 LLM Wiki 做一份教學 HTML 簡報",
+  "entryFile": "index.html",
+  "description": "結合 LLM Wiki（結構化知識庫）與 Loop/Graph 驗證工作流，將 5 篇經典論文與講義（Embeddings、AE、VAE、DDPM、LDM）Ingest 為知識庫，自動產製零基礎友善的 10 頁式互動 HTML 教學簡報與獨立 GitHub Pages 網站。",
+  "tags": [
+    "LLM Wiki 知識庫",
+    "互動教學 HTML 簡報",
+    "VAE 變分自編碼器",
+    "DDPM 擴散模型",
+    "Latent Diffusion",
+    "GitHub Pages"
+  ],
+  "links": [
+    {
+      "label": "線上簡報 (GitHub Pages)",
+      "url": "https://PhilipLin0211.github.io/llm-wiki-vae-diffusion/",
+      "type": "primary",
+      "external": true
+    },
+    {
+      "label": "獨立專案 Repo (GitHub)",
+      "url": "https://github.com/PhilipLin0211/llm-wiki-vae-diffusion",
+      "type": "secondary",
+      "external": true
+    },
+    {
+      "label": "LLM Wiki 知識庫成果",
+      "url": "https://PhilipLin0211.github.io/llm-wiki-vae-diffusion/wiki/index.md",
+      "type": "secondary",
+      "external": true
+    },
+    {
+      "label": "本地預覽 (Live Demo)",
+      "url": "./用 LLM Wiki 做一份教學 HTML 簡報/index.html",
+      "type": "secondary",
+      "external": false
+    }
+  ]
+}
