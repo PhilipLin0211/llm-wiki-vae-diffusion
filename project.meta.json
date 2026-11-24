@@ -2,16 +2,16 @@
   "id": "hw3-llm-wiki-slides",
   "badge": "作業三 (HW 3) • 已發布",
   "displayName": "用 LLM Wiki 做一份教學 HTML 簡報",
-  "subtitle": "從 VAE 到 Diffusion：零基礎搞懂 AI 圖像生成原理互動教學簡報",
+  "subtitle": "AI Agents 是什麼？零基礎搞懂自主型代理人互動教學簡報",
   "folderPath": "用 LLM Wiki 做一份教學 HTML 簡報",
   "entryFile": "index.html",
-  "description": "結合 LLM Wiki（結構化知識庫）與 Loop/Graph 驗證工作流，將 5 篇經典論文與講義（Embeddings、AE、VAE、DDPM、LDM）Ingest 為知識庫，自動產製零基礎友善的 10 頁式互動 HTML 教學簡報與獨立 GitHub Pages 網站。",
+  "description": "針對「AI Agents（自主型語言模型代理人）」領域，蒐集 5 篇經典文獻與工程指南（Lilian Weng、ReAct、Toolformer、Anthropic Building Agents、Generative Agents）建立結構化 LLM Wiki 知識庫，產製零基礎友善的 10 頁式互動 HTML 教學簡報與獨立 GitHub Pages 網站。",
   "tags": [
     "LLM Wiki 知識庫",
     "互動教學 HTML 簡報",
-    "VAE 變分自編碼器",
-    "DDPM 擴散模型",
-    "Latent Diffusion",
+    "AI Agents",
+    "ReAct 思考決策",
+    "Tool Use",
     "GitHub Pages"
   ],
   "links": [

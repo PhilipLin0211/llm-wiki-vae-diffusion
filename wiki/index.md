@@ -1,26 +1,26 @@
-# 圖像生成模型演進 LLM Wiki（總目錄）
+# AI Agents 技術文獻 LLM Wiki（總目錄）
 
-本知識庫以「**從 VAE 開始的冒險旅程**」為核心脈絡，系統性收錄現代 AI 圖像生成背後的關鍵數學直覺與架構演進。
+本知識庫系統性收錄網路上關於 **LLM-powered AI Agents** 的經典研究與工程實務文獻，拆解 AI 如何從「只會聊天的對話機器人」進化為「能自主規劃、記憶、呼叫工具並完成任務的數位代理人」。
 
-## 知識演進地圖（Concept Graph）
+## 知識架構地圖（Agent Architecture Graph）
 ```text
-[Proxy Tasks & Embeddings] ──▶ [Autoencoder (AE)] ──▶ [Variational Autoencoder (VAE)]
-                                                                │
-                                            (提供壓縮 Latent Space，解決高維運算瓶頸)
-                                                                ▼
-[Diffusion Models (DDPM)] ───────────────────────────▶ [Latent Diffusion Models (Stable Diffusion)]
+                    ┌─── [02. Planning & ReAct 推理規劃]
+                    │
+[01. AI Agent 核心定義] ──┼─── [03. Memory 短期與長期記憶] ──▶ [05. Workflows vs. Agents 工程選型]
+   (LLM 大腦中樞)    │
+                    └─── [04. Tool Use 外部工具呼叫]
 ```
 
 ## 核心概念條目（Concepts）
-1. [[01-embeddings-and-proxy-tasks]] — 呆萌 AI 機器人如何透過「代理任務」學會把萬物變成特徵向量？
-2. [[02-autoencoder]] — 輸入等於輸出的「自我複製」機器：Encoder 與 Decoder 的誕生與空間斷裂問題。
-3. [[03-variational-autoencoder]] — 強制潛在空間服從常態分佈 $\mathcal{N}(\mu, \sigma^2)$，讓隨機採樣也能畫出合理圖像。
-4. [[04-diffusion-models]] — Encoder 不用學、用算的！逐步加雜訊與 U-Net 逐步去雜訊的逆向工程。
-5. [[05-latent-diffusion-models]] — 為什麼沒有 VAE 就沒有 Stable Diffusion？在 $64\times 64$ 壓縮空間中結合 CLIP 條件控制。
+1. [[01-what-is-an-ai-agent]] — 聊天機器人（Chatbot）與 AI Agent 的本質差異：`Agent = LLM + Planning + Memory + Tools`。
+2. [[02-planning-and-react]] — 任務拆解與 ReAct（Thought $\rightarrow$ Action $\rightarrow$ Observation）邊想邊做的推理迴圈。
+3. [[03-memory-architecture]] — 突破 Context Window 限制：感覺記憶、短期工作記憶與向量資料庫長期記憶。
+4. [[04-tool-use-and-actions]] — 讓模型長出手腳：API 呼叫、搜尋引擎、程式碼直譯器與 Self-Supervised 工具學習。
+5. [[05-workflows-vs-autonomous-agents]] — Anthropic 工程實務指南：何時該用固定流程（Workflows）？何時才需要自主 Agent？
 
-## 已收錄資料來源（Ingested Sources，共 5 篇）
-- `src-01`: 蔡炎龍（2026）。《115-1 TAICA 生成式 AI：第 11 週 從 VAE 開始的冒險旅程》課程簡報。
-- `src-02`: Kingma, D. P., & Welling, M. (2013). *Auto-Encoding Variational Bayes* (arXiv:1312.6114).
-- `src-03`: Sohl-Dickstein, J., et al. (2015). *Deep Unsupervised Learning using Nonequilibrium Thermodynamics* (arXiv:1503.03585).
-- `src-04`: Ho, J., Jain, A., & Abbeel, P. (2020). *Denoising Diffusion Probabilistic Models (DDPM)* (arXiv:2006.11239).
-- `src-05`: Rombach, R., et al. (2022). *High-Resolution Image Synthesis with Latent Diffusion Models* (arXiv:2112.10752).
+## 已收錄網路文獻來源（Ingested Sources，共 5 篇）
+- `src-01`: Weng, L. (2023). *LLM Powered Autonomous Agents*. Lil'Log Technical Blog. `https://lilianweng.github.io/posts/2023-06-23-agent/`
+- `src-02`: Yao, S., et al. (2022). *ReAct: Synergizing Reasoning and Acting in Language Models* (arXiv:2210.03629). `https://arxiv.org/abs/2210.03629`
+- `src-03`: Schick, T., et al. (2023). *Toolformer: Language Models Can Teach Themselves to Use Tools* (arXiv:2302.04761). `https://arxiv.org/abs/2302.04761`
+- `src-04`: Anthropic Engineering (2024). *Building Effective Agents*. Anthropic Research & Engineering Blog. `https://www.anthropic.com/engineering/building-effective-agents`
+- `src-05`: Park, J. S., et al. (2023). *Generative Agents: Interactive Simulacra of Human Behavior* (arXiv:2304.03442). `https://arxiv.org/abs/2304.03442`
